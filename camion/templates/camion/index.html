@@ -1,0 +1,56 @@
+{% extends "app/base.html"%}
+
+{% block titulo %}CAMIONES{% endblock %}
+
+{% block estilos %}
+
+<style>
+</style>
+
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container mt-5">
+    <h1>Camiones</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <form action="" method="post">
+                {% csrf_token %}
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" class="form-control">
+
+                <label for="">Apellido</label>
+                <input type="text" name="apellido" class="form-control">
+
+                <label for="">Tipo Usuario</label>
+                <select name="tipo" class="form-select">
+                    <option value="">Seleccione alguna Opcion</option>
+                    <option value="normal">Normal</option>
+                    <option value="admin">Administrador</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary mt-3">Buscar</button>
+
+            </form>            
+        </div>
+    </div>
+    
+
+
+
+
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+</script>
+
+
+{% endblock %}

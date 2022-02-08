@@ -1,0 +1,23 @@
+{% extends "app/base.html"%}
+
+{% block titulo %}CAMIONES - RESULTADO{% endblock %}
+
+
+{% block contenido %}
+
+<div class="container mt-5">
+    <h1>RESULTADOS</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <p>Nombre: {{request.session.usuario.nombre}}</p>
+            <p>Apellido: {{request.session.usuario.apellido}}</p>
+            <p>Tipo Usuario: {{request.session.usuario.tipo}}</p>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}

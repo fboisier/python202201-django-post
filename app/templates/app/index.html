@@ -1,0 +1,37 @@
+{% extends "app/base.html"%}
+
+{% block titulo %}BIENVENIDA{% endblock %}
+
+{% block estilos %}
+
+<style>
+
+    h1{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 100px;
+    }
+</style>
+
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container mt-5">
+    <h1>Bienvenida</h1>
+    <hr>
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+
+    toastr.info("Esto es un mensaje de prueba", "MENSAJE DEL SISTEMA");
+
+</script>
+
+
+{% endblock %}
